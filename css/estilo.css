@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #e5e5f7;
+  background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#c1c1c1 1.2px, transparent 1.2px) 0 -0.6px, linear-gradient(90deg, #c1c1c1 1.2px, #e5e5f7 1.2px) -0.6px 0;
+  background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 520px;
+  height: auto;
+  margin: 100px auto;
+  background-color: #eee;
+  border-radius: 25px;
+  -webkit-box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.base {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: block;
+  float: none;
+  border-radius: 25px;
+}
+
+.base h4 {
+  text-align: left;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+  -webkit-box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+  padding: 15px 0px 15px 0px;
+  background: white;
+  font-size: 34px;
+  color: #1073d0;
+}
+
+.block {
+  width: 135px;
+  padding: 5px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  float: left;
+}
+
+.title {
+  font-size: 20px;
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: normal;
+  line-height: .5;
+  letter-spacing: .5px;
+  word-spacing: 2.7px;
+  color: #1073d0;
+}
+
+input[type=text] {
+  width: 140px;
+  margin: auto;
+  outline: none;
+  min-height: 50px;
+  border: 2px solid #1073d0;
+  padding: 12px;
+  background-color: #f7f7f7;
+  border-radius: 26px;
+  color: #1073d0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  border: 2px solid orange;
+  outline: none;
+}
+
+input[type=button] {
+  width: 150px;
+  margin-left: 35%;
+  margin-top: 40px;
+  outline: none;
+  border: none;
+  border-radius: 26px;
+  background-color: #0761b6;
+  color: #fff;
+  padding: 14px 16px;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+}
+
+input[type=button]:hover {
+  background-color: #003669;
+}
+
+#age {
+  display: block;
+  margin: 10px;
+  margin-top: 35px;
+  padding: 10px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  fonte-family: verdana;
+  font-size: 23px;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.5;
+  woerd-spacing: 2.7px;
+  color: #1073d0;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+  }
+  .block {
+    width: 30%;
+    margin-left: 10px;
+    padding: 0;
+  }
+  .block input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

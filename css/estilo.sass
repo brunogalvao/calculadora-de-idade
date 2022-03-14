@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap')
+    
+    
+$corPrimary: #1073d0
+$corLight: #fff
+$shadow: -2px 0 4px rgba(0,0,0, .2)
+$fonte: 'Roboto Condensed', sans-serif
+
+*
+    box-sizing: border-box
+
+body
+    font-family: $fonte
+    background-color: #e5e5f7
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#c1c1c1 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px, linear-gradient(90deg, #c1c1c1 1.2000000000000002px, #e5e5f7 1.2000000000000002px) -0.6000000000000001px 0
+    background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px
+    padding: 0
+    margin: 0
+    
+.container  
+    width: 520px
+    height: auto
+    margin: 100px auto
+    background-color: #eee
+    border-radius: 25px
+    box-shadow: $shadow
+
+.base   
+    width: 100%
+    margin: 0
+    overflow: hidden
+    display: block
+    float: none
+    border-radius: 25px
+    h4
+        text-align: left
+        text-align: center
+        font-family: $fonte
+        font-weight: normal
+        margin-top: 0
+        box-shadow: $shadow
+        padding: 15px 0px 15px 0px
+        background: white
+        font-size: 34px
+        color: $corPrimary
+
+.block
+    width: 135px
+    padding: 5px 20px
+    margin-left: 20px
+    display: inline-block
+    float: left
+
+.title
+    font-size: 20px
+    text-align: left
+    font-family: $fonte
+    font-weight: normal
+    line-height: .5
+    letter-spacing: .5px
+    word-spacing: 2.7px
+    color: $corPrimary
+
+input[type=text]
+   width: 140px
+   margin: auto
+   outline: none
+   min-height: 50px
+   border: 2px solid $corPrimary
+   padding: 12px
+   background-color: #f7f7f7
+   border-radius: 26px
+   color: $corPrimary
+   font-size: 1rem
+   text-transform: uppercase
+   box-shadow: $shadow
+   font-family: sans-serif
+
+input[type=text]:focus
+    background-color: $corLight
+    border: 2px solid orange
+    outline: none
+
+input[type=button]
+    width: 150px
+    margin-left: 35%
+    margin-top: 40px
+    outline: none
+    border: none
+    border-radius: 26px
+    background-color: #0761b6
+    color: $corLight
+    padding: 14px 16px
+    text-transform: uppercase
+    transition: all .3s ease-in-out
+    cursor: pointer
+    box-shadow: $shadow
+    font-family: $fonte
+    font-size: 1rem
+
+input[type=button]:hover
+    background-color: #003669
+
+#age
+    display: block
+    margin: 10px
+    margin-top: 35px
+    padding: 10px
+    padding-bottom: 20px
+    overflow: hidden
+    fonte-family: verdana
+    font-size: 23px
+    text-align: center
+    font-weight: normal
+    line-height: 1.5
+    woerd-spacing: 2.7px
+    color: $corPrimary
+
+
+@media screen and (max-width: 500px)
+    .container
+        width: 80%
+
+    .block
+        width: 30%
+        margin-left: 10px
+        padding: 0
+        input
+            width: 100%
+
