@@ -24,16 +24,46 @@ function age() {
         return false;
     }
 
+    
+    // console.log(d2, m2, y2);
+    
     if( d1 > d2 ){
         d2 = d2 + month[m2 - 1];
         m2 = m2 - 1;
     }
-
+    
     if ( m1 > m2 ) {
         m2 = m2 + 12;
         y2 = y2 - 1;
     }
 
+    if (d1 == '' && m1 == '' && y1 == '') {
+        document
+            .getElementById('age')
+            .innerHTML = 'Informe a sua data de nascimento.';
+        return false;
+    }
+
+    if (d1 == '') {
+        document
+            .getElementById('age')
+            .innerHTML = 'Informe o seu dia de nascimento.';
+        return false;
+    }
+
+    if (m1 == '') {
+        document
+            .getElementById('age')
+            .innerHTML = 'Informe o mês de nascimento.';
+        return false;
+    }
+
+    if (y1 == '') {
+        document
+            .getElementById('age')
+            .innerHTML = 'Informe o ano de nascimento.';
+        return false;
+    }
 
     var d = d2 - d1;
     var m = m2 - m1;
@@ -59,4 +89,19 @@ function somenteNumeros(num) {
     if (er.test(campo.value)) {
       campo.value = "";
     }
+}
+
+function limpar() {
+    document
+        .getElementById('date')
+        .value = '';
+    document
+        .getElementById('month')
+        .value = '';
+    document
+        .getElementById('year')
+        .value = '';
+    document
+        .getElementById('age')
+        .innerHTML = '';
 }
